@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://v1.fontapi.ir/css/Shabnam');
+
+body{
+    font-family: Shabnam !important;
+    direction: rtl;
+    text-align: right !important;
+}
+
+.page-item:first-child .page-link{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+}
+
+.page-item:last-child .page-link{
+    border-top-left-radius: 0.35rem;
+        border-bottom-left-radius: 0.35rem;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+}
