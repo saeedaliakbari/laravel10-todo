@@ -3,7 +3,10 @@
 @section('content')
     <div class="row justify-content-center mt-3">
         <div class="col-md-8">
-            <h4>برنامه ریزی کارها</h4>
+            <div class="d-flex justify-content-between my-3 align-items-center">
+                <h4>برنامه ریزی کارها</h4>
+                <a href={{ route('todo.create') }} class="btn btn-sm btn-outline-primary">ایجاد</a>
+            </div>
             <div class="card">
                 <div class="card-header">
                     کارها
