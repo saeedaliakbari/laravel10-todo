@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     @yield('content')
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

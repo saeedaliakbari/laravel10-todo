@@ -16,7 +16,14 @@
                         @foreach ($todos as $todo)
                             <li class="list-group-item d-flex justify-content-between">
                                 {{ $todo->title }}
-                                <a href={{ route('todo.show', ['todo' => $todo->id]) }} class="btn btn-sm btn-dark">نمایش</a>
+                                <div>
+                                    <a href={{ route('todo.show', ['todo' => $todo->id]) }}
+                                        class="btn btn-sm btn-dark">نمایش</a>
+                                    @if ($todo->completed == 0)
+                                        <a href={{ route('todo.completed', ['todo' => $todo->id]) }}
+                                            class="btn btn-sm btn-outline-primary">انجام شد</a>
+                                    @endif
+                                </div>
                             </li>
                         @endforeach
 
